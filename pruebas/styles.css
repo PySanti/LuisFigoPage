@@ -1,0 +1,27 @@
+.grid-container{
+    padding : 30px;
+    background-color: #0f0;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap : 20px;
+    grid-template-areas :   "title" "cont"  "nav"
+                            "title" "cont"   "nav"
+                            "title" "cont"   "nav";
+}
+
+.grid-container > *{
+    background-color: #aaa;
+    padding : 20px;
+}
+
+.grid-container__title{
+    grid-area: title;
+}
+.grid-container__content{
+    grid-area: cont;
+}
+.grid-container__nav{
+    grid-area: nav;
+}
